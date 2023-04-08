@@ -1,0 +1,52 @@
+.banner__titulo{
+    font-size: 3rem;
+    color: #fdfdfd;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    text-shadow: 0 4px 4px rgba(0,0,0,.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.banner-leyenda{
+    color: #fdfdfd;
+    position: absolute;
+    left: 30%;
+    top: 65%;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 4px rgba(0,0,0,.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo{
+        position: absolute;
+        font-size: 1rem;
+        width: 328px;
+        height: 26px;
+    }
+
+    .banner-leyenda{
+        position: absolute;
+        font-size: 0.5rem;
+        width: 328px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .banner__titulo{
+        font-size: 3rem;
+        color: #fdfdfd;
+        width: 100%;
+    }
+    .banner-leyenda{
+        font-size: 1.8rem;
+        color: #fdfdfd;
+        width: 100%;
+    }
+}

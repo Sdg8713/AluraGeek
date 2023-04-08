@@ -1,0 +1,30 @@
+.banner__imagen{
+    background: url(../../../img/banner/banner-bc.png) no-repeat center / cover;
+    width: 100%;
+    animation: banner 10s infinite;
+}
+
+@keyframes banner {
+    0%, 30%{
+        background-image: url(../../../img/banner/banner-bc.png);
+    }
+    35%, 65%{
+        background-image: url(../../../img/banner/Hass-banner.png);
+    }
+    70%, 100%{
+        background-image: url(../../../img/banner/RedBull-banner.png);
+    }
+}
+
+
+@media screen and (min-width: 0) {
+    .banner__imagen{
+        height: calc(100vh - 51px);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .banner__imagen{
+        height: calc(100vh - 72px);
+    }
+}

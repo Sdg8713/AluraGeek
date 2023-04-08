@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/index/barra de busqueda/searchbar.css">
+    <link rel="stylesheet" href="./assets/css/productos/agregar-productos/agregar-producto.css">
+    <link rel="stylesheet" href="./assets/css/productos/agregar-productos/style.css">
+    <link rel="stylesheet" href="./assets/css/index/info-contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/css/index/info-contacto/info-links.css">
+    <link rel="stylesheet" href="./assets/css/index/info-contacto/form-contacto.css">
+    <link rel="stylesheet" href="./assets/css/index/footer/footer.css">
+    <title>Alura-Geek</title>
+</head>
+
+<body>
+
+    <header class="header contenedor">
+         <a href="./index.html" class="header_logo">
+            <img src="./assets/img/Logo.png" alt="logotipo" class="header_logo-img">
+        </a>
+        <div class="container-searchbar">
+            <form action="" method="get" class="searchbar">
+                <input type="text" placeholder="¿Que deseas buscar?" name="q">
+                <button type="submit"><img src="./assets/img/search.svg" class="img-btn"></button>
+            </form>
+        </div>
+    </header>
+
+    <main class="contenedor-productos">
+
+        <form id="formulario" class="formulario contenedor">
+            <h3 class="formulario_titulo">Agregar nuevo producto</h3>
+
+            <div class="cont-errores">
+            </div>
+
+            <span class="subir-img">
+                <input class="input-file" type="file" id="subir-img" accept="image/*" />
+            </span>
+
+            <label for="subir-img">
+                <span>Seleccionar Imagen</span>
+            </label>
+
+            <br>
+
+            <img class="input-file_img" id="img" />
+
+            <div class="contenedor_input">
+                <input class="input" type="text" placeholder="Nombre" id="nombre">
+                <label class="input-label" for="nombre-producto">Nombre</label>
+            </div>
+
+            <div class="contenedor_input">
+                <input class="input" type="text" placeholder="Precio" id="precio">
+                <label class="input-label" for="precio-producto">Precio</label>
+            </div>
+
+
+            <div class="contenedor_input">
+                <input class="input" type="text" placeholder="Url" id="imagen">
+                <label class="input-label" for="url">URL de la imagen</label>
+            </div>
+
+
+            <div class="contenedor_input">
+                <select class="select" id="categoria">
+                    <option value="" disabled selected> -- Seleccione una categoría -- </option>
+                    <option value="gorras">Gorras</option>
+                    <option value="camisas">Camisas</option>
+                    <option value="sudaderas">Sudaderas</option>
+                </select>
+            </div>
+
+
+            <input id="registrar-producto-btn" type="submit" value="Registrar Producto" class="btn-azul"
+                style="width: 100%;">
+        </form>
+
+
+    </main>
+
+
+
+    <section class="info-contacto">
+        <img src="./assets/img/Logo.png" alt="Logo Alura Geek" class="logo-info">
+        <div class="informacion">
+            <a href="#" class="info-links">Quienes Somos</a>
+            <a href="#" class="info-links">Politica de Privacidad</a>
+            <a href="#" class="info-links">Programa de Fidelidad</a>
+            <a href="#" class="info-links">Nuestras Tiendas</a>
+            <a href="#" class="info-links">Quiero ser Franquiciado</a>
+            <a href="#" class="info-links">Anunciese Aquí</a>
+        </div>
+        <div class="area-contacto">
+            <h3 class="area_titulo">Hable con nosotros</h3>
+            <form action="text"><input type="text" placeholder="Nombre" class="contacto-nombre"></form>
+            <form action="text"><input type="text" placeholder="Escribe tu Mensaje" class="contacto-mensaje"></form>
+            <button type="submit" class="btn-form">Enviar Mensaje</button>
+        </div>
+    </section>
+    <footer class="footer">
+            <p>Desarrollado por Sergio Delgado</p>
+            <p>2023</p>
+    </footer>
+
+
+    <script type="module" src="./controllers/registrar-producto-controller.js"></script>
+    <script src="./assets/JavaScript/form.js"></script>
+</body>
+
+</html>

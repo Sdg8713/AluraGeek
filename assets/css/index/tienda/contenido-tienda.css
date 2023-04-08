@@ -1,0 +1,63 @@
+.tienda-contenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 1.5rem;
+    margin-left: 20px;
+}
+
+.ver-producto{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.producto-box{
+    position: relative;
+}
+
+.producto-box:hover{
+    padding: 10px;
+    border: 1px solid #000;
+    transition: 0.4s;
+}
+
+.producto-img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.producto-titulo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.precio{
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.categoria-producto{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2A7AE4;
+}
+
+.bolsa-add{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bolsa-add:hover{
+    background: hsl(249,32%,17%);
+}

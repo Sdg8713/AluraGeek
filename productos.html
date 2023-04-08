@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/productos/style-productos.css">
+    <link rel="stylesheet" href="./assets/css/productos/header/header.css">
+    <link rel="stylesheet" href="./assets/css/productos/agregar-productos/style.css">
+    <link rel="stylesheet" href="./assets/css/productos/header/header-carrito.css">
+    <link rel="stylesheet" href="./assets/css/productos/header/header-login.css">
+    <link rel="stylesheet" href="./assets/css/productos/barra de busqueda/searchbar.css">
+    <link rel="stylesheet" href="./assets/css/productos/banner/banner.css">
+    <link rel="stylesheet" href="./assets/css/productos/banner/banner__img.css">
+    <link rel="stylesheet" href="./assets/css/productos/banner/banner-texto.css">
+    <link rel="stylesheet" href="./assets/css/productos/productos/contenido-productos.css">
+    <link rel="stylesheet" href="./assets/css/productos/info-contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/css/productos/info-contacto/info-links.css">
+    <link rel="stylesheet" href="./assets/css/productos/info-contacto/form-contacto.css">
+    <link rel="stylesheet" href="./assets/css/productos/footer/footer.css">
+
+    <title>Alura Geek-Productos</title>
+</head>
+
+<body>
+    <header class="header contenedor">
+        <a href="./index.html" class="header_logo">
+           <img src="./assets/img/Logo.png" alt="logotipo" class="header_logo-img" height="50px" width="150px">
+       </a>
+       <div class="header_barra">
+           <div class="header_barra-buscar">
+               <input class="header_barra-buscador" type="text" id="buscador" placeholder="¿Que deseas buscar?"
+                   maxlength="50">
+                   <img src="./assets/img/search.svg" class="img-btn">
+           </div>
+       </div>
+   </header>
+    
+    <main class="main-container">
+            <section class="tienda contenedor">
+            <div class="tienda-contenido" data-product>
+                <div class="titulo-container">
+                    <h2 class="seccion-titulo">Todos los Productos</h2>
+                    <button class="btn-prd"><a href="./agregar-producto.html">Agregar Producto</a></button>
+                </div>
+            </div>
+        </section>         
+        <section class="info-contacto">
+            <img src="./assets/img/Logo.png" alt="Logo Alura Geek" class="logo-info">
+            <div class="informacion">
+                <a href="#" class="info-links">Quienes Somos</a>
+                <a href="#" class="info-links">Politica de Privacidad</a>
+                <a href="#" class="info-links">Programa de Fidelidad</a>
+                <a href="#" class="info-links">Nuestras Tiendas</a>
+                <a href="#" class="info-links">Quiero ser Franquiciado</a>
+                <a href="#" class="info-links">Anunciese Aquí</a>
+            </div>
+            <div class="area-contacto">
+                <h3 class="area_titulo">Hable con nosotros</h3>
+                <form action="text"><input type="text" placeholder="Nombre" class="contacto-nombre"></form>
+                <form action="text"><input type="text" placeholder="Escribe tu Mensaje" class="contacto-mensaje"></form>
+                <button type="submit" class="btn-form">Enviar Mensaje</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+            <p class="titulo-footer">Desarrollado por Sergio Delgado</p>
+            <p>2023</p>
+    </footer>
+    <script type="module" src="./controllers/productos-controllers.js"></script>
+</body>

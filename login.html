@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/login/style-login.css">
+    <link rel="stylesheet" href="./assets/css/login/barra de busqueda/searchbar.css">
+    <link rel="stylesheet" href="./assets/css/login/header/header-login.css">
+    <link rel="stylesheet" href="./assets/css/login/inicio/login.css">
+    <link rel="stylesheet" href="./assets/css/login/info-contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/css/login/info-contacto/info-links.css">
+    <link rel="stylesheet" href="./assets/css/login/info-contacto/form-contacto.css">
+    <link rel="stylesheet" href="./assets/css/login/footer/footer.css">
+    <title>Alura Geek-Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <a href="./index.html"><img src="./assets/img/Logo.png" alt="Logo Alura Geek" class="logo"></a>
+        </div>
+        <div class="container-searchbar">
+            <form action="" method="get" class="searchbar">
+                <input type="text" placeholder="¿Que deseas buscar?" name="q">
+                <button type="submit"><img src="./assets/img/search.svg" class="img-btn"></button>
+            </form>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <div class="form-container">
+            <div class="form-login">
+                <h2 class="form-titulo">Iniciar Sesión</h2>
+                <form action=""><input type="email" class="form-correo" placeholder="Escriba su Correo"></form>
+                <form action=""><input type="password" class="form-contraseña" placeholder="Escriba su Contraseña"></form>
+                <button type="submit" class="btn-form-login">Entrar</button>
+            </div>
+        </div>
+        <section class="info-contacto">
+            <img src="./assets/img/Logo.png" alt="Logo Alura Geek" class="logo-info">
+            <div class="informacion">
+                <a href="#" class="info-links">Quienes Somos</a>
+                <a href="#" class="info-links">Politica de Privacidad</a>
+                <a href="#" class="info-links">Programa de Fidelidad</a>
+                <a href="#" class="info-links">Nuestras Tiendas</a>
+                <a href="#" class="info-links">Quiero ser Franquiciado</a>
+                <a href="#" class="info-links">Anunciese Aquí</a>
+            </div>
+            <div class="area-contacto">
+                <h3 class="area_titulo">Hable con nosotros</h3>
+                <form action="text"><input type="text" placeholder="Nombre" class="contacto-nombre"></form>
+                <form action="text"><input type="text" placeholder="Escribe tu Mensaje" class="contacto-mensaje"></form>
+                <button type="submit" class="btn-form">Enviar Mensaje</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+            <p class="titulo-footer">Desarrollado por Sergio Delgado</p>
+            <p>2023</p>
+    </footer>
+</body>

@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    width: 360px;
+    height: 102px;
+}
+
+@media screen and (min-width : 1224px) {
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        gap: 10px;
+        width: 100%;
+        height: 102px;
+        position: absolute;
+        top: 1200px;
+        background: #FFF;
+    }
+    
+    .titulo-footer{
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}

@@ -1,0 +1,42 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+header{
+    background: #FFF;
+    width: 100%;
+}
+
+.main-container{
+    background: #E5E5E5;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container{
+    position: absolute;
+    width: 475px;
+    height: 289px;
+    left: 45px;
+    top: 169px;
+}
+
+@media screen and (min-width : 1224px) {
+    *{
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .form-container{
+        width: 100%;
+        min-width: 500px;
+        height: 1440px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #E5E5E5;
+    }
+}

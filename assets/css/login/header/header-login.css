@@ -1,0 +1,40 @@
+
+.btn-login{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 133px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    position: relative;
+    right: 500px;
+}
+
+@media screen and (min-width : 1224px) {
+    .btn-login{
+        position: absolute;
+        width: 182px;
+        height: 51px;
+        top: 15px;
+        left: 1150px;
+        color: #2A7AE4;
+        border: 1px solid #2A7AE4;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
+    .btn-login a{
+        text-decoration: none;
+        outline: none;
+        color: #2A7AE4;
+    }
+    
+    .btn-login:hover{
+        background: #2A7AE4;
+        color: #fff;
+    }
+}
